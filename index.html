@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GVR Constructions - Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">GVR Constructions</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Building Your Dreams into Reality</h1>
+    <p>Trusted real estate developer in Andhra Pradesh</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      GVR Constructions is a leading real estate developer with a legacy of trust, quality, and excellence. We specialize in residential and commercial projects that stand the test of time.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Our Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <h3>Green Farms</h3>
+        <p>Luxury 2 & 3 GVR Constructions in Nellore.</p>
+      </div>
+      <div class="card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Hilltop Enclave</h3>
+        <p>Premium villas with scenic views in Nellore.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/gallery1.jpg" alt="Gallery Image 1" />
+      <img src="images/gallery2.jpg" alt="Gallery Image 2" />
+      <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+    </div>
+
+    <div class="video-container">
+      <video controls>
+        <source src="videos/site-tour.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@gvrconstructions.com">info@gvrconstructions.com</a></p>
+    <p>Phone: +91-8500008264</p>
+    <p>Location: Nellore, Andhra Pradesh</p>
+  
+    <h3>For site visiting Send us your WhatsApp Number</h3>
+    <form onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="whatsappNumber" placeholder="Enter your WhatsApp number" required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+  <script>
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    const userNumber = document.getElementById("whatsappNumber").value;
+    const myNumber = "918500008264"; // <-- replace with YOUR WhatsApp number in international format
+    const url = `https://wa.me/${myNumber}?text=User%20shared%20WhatsApp%20number:%20${encodeURIComponent(userNumber)}`;
+    window.open(url, "_blank");
+  }
+  </script>
+
+  <footer>
+    &copy; 2025 GVR Constructions. All rights reserved.
+  </footer>
+</body>
+</html>
