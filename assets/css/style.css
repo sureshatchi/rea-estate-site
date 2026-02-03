@@ -1,0 +1,64 @@
+/* Basic reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #004080;
+  color: #fff;
+  padding: 15px;
+}
+
+nav h1 { display: inline-block; margin: 0; }
+nav ul { list-style: none; float: right; }
+nav ul li { display: inline; margin: 0 10px; }
+nav ul li a { color: #fff; text-decoration: none; }
+
+/* Mobile nav toggle */
+.nav-toggle {
+  background: #004080;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav ul.open { display: block; }
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #004080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn.whatsapp { background: #25D366; }
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.gallery img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
