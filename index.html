@@ -1,91 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GVR Constructions - Real Estate</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Real Estate Company | Projects & Contact</title>
+  <meta name="description" content="Real estate projects showcase with photos, company info, and WhatsApp connect to the owner." />
+  <link rel="icon" href="assets/img/project-1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">GVR Constructions</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <div style="font-size:14px; line-height:1.1">Your Real Estate</div>
+        <div class="small">Projects • Plots • Homes</div>
+      </div>
+    </a>
+
+    <nav class="navlinks" aria-label="Primary">
+      <a id="navHome" href="#home">Home</a>
+      <a id="navProjects" href="#projects">Projects</a>
+      <a id="navAbout" href="#about">Company</a>
+      <a id="navContact" href="#contact">Contact</a>
+      <button id="langToggle" class="lang" type="button" aria-label="Toggle Language">
+        <span>🌐</span> <span id="langLabel">EN</span>
+      </button>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Building Your Dreams into Reality</h1>
-    <p>Trusted real estate developer in Andhra Pradesh</p>
-  </section>
+<main id="home" class="hero">
+  <div class="container hero-grid">
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      GVR Constructions is a leading real estate developer with a legacy of trust, quality, and excellence. We specialize in residential and commercial projects that stand the test of time.
-    </p>
-  </section>
+    <section class="card hero-card">
+      <div class="kicker" data-i18n="heroKicker">REAL ESTATE PROJECTS</div>
+      <h1 class="h1" data-i18n="heroTitle">Premium Plots & Homes, Built With Trust</h1>
+      <p class="sub" data-i18n="heroSub">Showcase your real estate projects with photos, key highlights, and a simple WhatsApp connect flow for potential buyers.</p>
 
-  <section id="projects" class="section">
-    <h2>Our Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <img src="images/project1.jpg" alt="Project 1" />
-        <h3>Green Farms</h3>
-        <p>Luxury 2 & 3 GVR Constructions in Nellore.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects"><span>🏡</span> <span data-i18n="heroCta1">View Projects</span></a>
+        <a id="ctaWhatsApp" class="btn" href="#"><span>💬</span> <span data-i18n="heroCta2">Connect on WhatsApp</span></a>
       </div>
-      <div class="card">
-        <img src="images/project2.jpg" alt="Project 2" />
-        <h3>Hilltop Enclave</h3>
-        <p>Premium villas with scenic views in Nellore.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="gallery" class="section">
-    <h2>Gallery</h2>
+      <div class="stats">
+        <div class="stat">
+          <b data-i18n="stats1">Verified Listings</b>
+          <div data-i18n="stat1s">Transparent documents & guidance</div>
+        </div>
+        <div class="stat">
+          <b data-i18n="stats2">Prime Locations</b>
+          <div data-i18n="stat2s">Near main roads, schools & IT hubs</div>
+        </div>
+        <div class="stat">
+          <b data-i18n="stats3">Customer Support</b>
+          <div data-i18n="stat3s">Quick response on WhatsApp</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card hero-side">
+      <div class="badge">
+        <div>
+          <div class="small" data-i18n="quickInfo">Quick info</div>
+          <b><span data-i18n="owner">Owner</span>: <span id="ownerName">Mahesh</span></b>
+        </div>
+        <div style="text-align:right">
+          <div class="small" data-i18n="phone">Phone</div>
+          <b id="ownerPhone">+918500008233</b>
+        </div>
+      </div>
+
+      <div class="badge">
+        <div>
+          <div class="small" data-i18n="location">Location</div>
+          <b id="ownerLocation">Bengaluru, Karnataka</b>
+        </div>
+        <a class="btn" href="#contact">✉️ <span data-i18n="contactTitle">Connect With the Owner</span></a>
+      </div>
+
+      <div class="map">
+        <!-- Replace the src with your exact Google Maps embed URL -->
+        <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bengaluru%20Karnataka&output=embed"></iframe>
+      </div>
+      <div class="small" id="mapNote">Tip: Replace the map iframe with your exact project location.</div>
+    </aside>
+
+  </div>
+</main>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 data-i18n="galleryTitle">Project Photos</h2>
+    <p data-i18n="gallerySub">Replace these placeholders with your actual project photos.</p>
+
     <div class="gallery">
-      <img src="images/gallery1.jpg" alt="Gallery Image 1" />
-      <img src="images/gallery2.jpg" alt="Gallery Image 2" />
-      <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+      <div class="thumb"><img src="assets/img/project-1.svg" alt="Project photo 1" /><div class="cap">Project 1</div></div>
+      <div class="thumb"><img src="assets/img/project-2.svg" alt="Project photo 2" /><div class="cap">Project 2</div></div>
+      <div class="thumb"><img src="assets/img/project-3.svg" alt="Project photo 3" /><div class="cap">Project 3</div></div>
+      <div class="thumb"><img src="assets/img/project-4.svg" alt="Project photo 4" /><div class="cap">Project 4</div></div>
+      <div class="thumb"><img src="assets/img/project-5.svg" alt="Project photo 5" /><div class="cap">Project 5</div></div>
+      <div class="thumb"><img src="assets/img/project-6.svg" alt="Project photo 6" /><div class="cap">Project 6</div></div>
     </div>
+  </div>
+</section>
 
-    <div class="video-container">
-      <video controls>
-        <source src="videos/site-tour.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+<section id="about" class="section">
+  <div class="container">
+    <h2 data-i18n="aboutTitle">Company Information</h2>
+    <p data-i18n="aboutSub">Write a short story about your company, years of experience, mission, and what makes your projects different.</p>
+
+    <div class="grid-3" style="margin-top:14px">
+      <div class="feature">
+        <h3 data-i18n="f1t">Clear Documentation</h3>
+        <p data-i18n="f1d">We provide clear documentation guidance to make buying simple and safe.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="f2t">Great Connectivity</h3>
+        <p data-i18n="f2d">Projects selected for connectivity and long-term value.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="f3t">Fast WhatsApp Support</h3>
+        <p data-i18n="f3d">Send your details and get quick responses from the owner.</p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@gvrconstructions.com">info@gvrconstructions.com</a></p>
-    <p>Phone: +91-8500008264</p>
-    <p>Location: Nellore, Andhra Pradesh</p>
-  
-    <h3>For site visiting Send us your WhatsApp Number</h3>
-    <form onsubmit="sendToWhatsApp(event)">
-      <input type="text" id="whatsappNumber" placeholder="Enter your WhatsApp number" required />
-      <button type="submit">Send</button>
+<section id="contact" class="section">
+  <div class="container card" style="padding:18px">
+    <h2 data-i18n="contactTitle">Connect With the Owner</h2>
+    <p data-i18n="contactSub">Enter your details and message. Clicking the button will open WhatsApp with a pre-filled message to the owner.</p>
+
+    <form id="leadForm" class="form" autocomplete="on">
+      <input id="fName" class="input" type="text" data-i18n-placeholder="name" placeholder="Full Name" required />
+      <input id="fMobile" class="input" type="tel" data-i18n-placeholder="mobile" placeholder="Your Mobile Number" required />
+      <input id="fEmail" class="input" type="email" data-i18n-placeholder="email" placeholder="Email (optional)" />
+      <div></div>
+      <textarea id="fMessage" data-i18n-placeholder="message" placeholder="Message / Requirement"></textarea>
+      <div>
+        <button class="btn primary" type="submit">💬 <span data-i18n="send">Send via WhatsApp</span></button>
+        <div class="helper" data-i18n="privacy">We do not store your data. WhatsApp will open in a new tab with your message.</div>
+      </div>
     </form>
-  </section>
-  
-  <script>
-  function sendToWhatsApp(event) {
-    event.preventDefault();
-    const userNumber = document.getElementById("whatsappNumber").value;
-    const myNumber = "918500008264"; // <-- replace with YOUR WhatsApp number in international format
-    const url = `https://wa.me/${myNumber}?text=User%20shared%20WhatsApp%20number:%20${encodeURIComponent(userNumber)}`;
-    window.open(url, "_blank");
-  }
-  </script>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 GVR Constructions. All rights reserved.
-  </footer>
+<footer class="footer">
+  <div class="container" id="footerText">© 2026 Your Real Estate Company. All rights reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
